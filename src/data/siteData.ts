@@ -1,6 +1,6 @@
 import { BarChart3, CloudRain, Cpu, Droplets, Leaf, Sprout, Zap } from "lucide-react";
 
-export const videoUrl = "https://youtu.be/H3lj8vFA9tQ";
+export const videoUrl = "https://youtu.be/WgQ9eCY29fk";
 export const navItems = [
  { href: "/", label: "Início" },
  { href: "/saude", label: "Saúde do cultivo" },
