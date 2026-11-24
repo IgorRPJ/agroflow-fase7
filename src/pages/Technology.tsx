@@ -1,0 +1,4 @@
+import PageHero from "../components/PageHero";
+import { architectureLayers, technologies } from "../data/siteData";
+
+export default function Technology() { return <div><PageHero eyebrow="Tecnologia" title="Do sensor à decisão, sem ruído." text="Uma arquitetura pensada para levar informação confiável do campo até a tela da sua equipe." /><section className="section"><div className="tech-grid">{technologies.map(item => <article className="tech-card" key={item.title}><item.icon size={28} /><h3>{item.title}</h3><p>{item.text}</p></article>)}</div><div className="architecture"><span className="eyebrow">Como os dados fluem</span>{architectureLayers.map((layer, index) => <div className="architecture-row" key={layer.title}><span>0{index + 1}</span><strong>{layer.title}</strong><p>{layer.text}</p></div>)}</div></section></div>; }
